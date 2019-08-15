@@ -314,7 +314,7 @@ var ClientDetailComponent = /** @class */ (function () {
                 color: ""
             },
             {
-                title: "Ligações Arcelor",
+                title: "Pedidos Recolhimento",
                 icon: "fa-phone",
                 value: clients.selected.info.ligacoes,
                 color: ""
@@ -400,122 +400,24 @@ var MateriaisComponent = /** @class */ (function () {
     function MateriaisComponent() {
         this.search = "";
         this.materiais2 = [
-            { matnr: '90000158', maktx: '901770 (Emb. contém 1un. ) ', maktg: 'Contra filé', qnt: "90", centro: "1052" },
-            { matnr: '90000164', maktx: '914190 (Emb. contém 1un. ) ', maktg: 'Picanha ', qnt: "12", centro: "1101" },
-            { matnr: '90000633', maktx: '900108 (Emb. contém 1un. ) ', maktg: 'Colunas', qnt: "85", centro: "1004" },
-            { matnr: '90002074', maktx: '900083 (Emb. contém 1un. ) ', maktg: 'Cupim (O2)     ', qnt: "15", centro: "1004" },
-            { matnr: '90002093', maktx: '900107 (Emb. contém 1un. ) ', maktg: 'Filé Mignon    ', qnt: "45", centro: "1004" },
+            { matnr: '90000158', maktx: '901770 (Emb. contém 1un. ) ', maktg: 'Nitrogênio', qnt: "90", centro: "1052" },
+            { matnr: '90000164', maktx: '914190 (Emb. contém 1un. ) ', maktg: 'Ar sintético ', qnt: "12", centro: "1101" },
+            { matnr: '90000633', maktx: '900108 (Emb. contém 1un. ) ', maktg: 'Co2', qnt: "85", centro: "1004" },
+            { matnr: '90002074', maktx: '900083 (Emb. contém 1un. ) ', maktg: 'Oxigênio medicinal', qnt: "15", centro: "1004" },
+            { matnr: '90002093', maktx: '900107 (Emb. contém 1un. ) ', maktg: 'Oxigênio industrial', qnt: "45", centro: "1004" },
         ];
         this.materiais = [
             { matnr: '00000000', maktx: '----------------------------------------------------', maktg: '--------------------------------------------------------------', qnt: "---", centro: "----" },
-            { matnr: '90000158', maktx: '901770 (Emb. contém 1un. ) ', maktg: 'Contra filé', qnt: "90", centro: "1052" },
-            { matnr: '90000164', maktx: '914190 (Emb. contém 1un. ) ', maktg: 'Picanha ', qnt: "12", centro: "1101" },
-            { matnr: '90000633', maktx: '900108 (Emb. contém 1un. ) ', maktg: 'Colunas', qnt: "85", centro: "1004" },
-            { matnr: '90002074', maktx: '900083 (Emb. contém 1un. ) ', maktg: 'Cupim (O2)     ', qnt: "15", centro: "1004" },
-            { matnr: '90002093', maktx: '900107 (Emb. contém 1un. ) ', maktg: 'Filé Mignon    ', qnt: "45", centro: "1004" },
-            { matnr: '90000158', maktx: '901770 (Emb. contém 1un. ) ', maktg: 'Costelinha', qnt: "90", centro: "1052" },
-            { matnr: '90000164', maktx: '914190 (Emb. contém 1un. ) ', maktg: 'Costela Janelão ', qnt: "12", centro: "1101" },
-            { matnr: '90000633', maktx: '900108 (Emb. contém 1un. ) ', maktg: 'Colunas', qnt: "85", centro: "1004" },
-            { matnr: '90002074', maktx: '900083 (Emb. contém 1un. ) ', maktg: 'Dramix® ', qnt: "15", centro: "1004" },
-            { matnr: '90002093', maktx: '900107 (Emb. contém 1un. ) ', maktg: 'Estribos', qnt: "45", centro: "1004" },
-            { matnr: '20058075', maktx: 'REP7020 C C WH 0827X1169 RF 00500 10 056', maktg: 'PAPEL SUZANO REPORT PREMIUM' },
-            { matnr: '20057472', maktx: 'RHC2075 C C RO 0210X0297 RM 00500 05 096', maktg: 'PAPEL REPORT MULTIUSO COLORIDO' },
-            { matnr: '20057473', maktx: 'RHC2075 C C AZ 0210X0297 RM 00500 05 096', maktg: 'PAPEL REPORT MULTIUSO COLORIDO' },
-            { matnr: '20042820', maktx: 'RHQ8090 C C BR 0216X0279 RM 00500 10 032', maktg: 'PAPEL REPORT HIGH QUALITY' },
-            { matnr: '20043756', maktx: 'RHQ8080 C C BR 0420X0297 LS 00500 05 024', maktg: 'REPORT HIGH QUALITY' },
-            { matnr: '20022800', maktx: 'RIG1160 B C BR 0914X0090 CO 00051 01 000', maktg: 'REPORT INK JET ESPECIAL GLOSS' },
-            { matnr: '20042414', maktx: 'ROC1075 C C NT 0420X0297 R2 00500 05 025', maktg: 'PAPEL RECICLATO COLORLOK' },
-            { matnr: '20047587', maktx: 'ROC2075 C C NT 0216X0279 R2 00500 05 050', maktg: 'PAPEL RECICLATO COLORLOK' },
-            { matnr: '20058073', maktx: 'ROC1075 C C NT 0210X0297 RJ 00500 05 096', maktg: 'PAPEL RECICLATO COLORLOK' },
-            { matnr: '20016747', maktx: 'TEE7075 C C BR 0210X0297 CO 00100 25 090', maktg: 'PAPEL REPORT SENNINHA' },
-            { matnr: '20061134', maktx: 'TEEA075 C C BR 0210X0297 SN 00100 25 096', maktg: 'PAPEL REPORT SENNINHA' },
-            { matnr: '20058078', maktx: 'REPM075 C C BR 0210X0297 RF 00500 10 056', maktg: 'PAPEL SUZANO REPORT PREMIUM' },
-            { matnr: '20000524', maktx: 'AAA2180 F C BR 0760X1120 CO 00125 01 072', maktg: 'PAPEL ALTA ALVURA ALCALINO' },
-            { matnr: '20000540', maktx: 'AAA2180 F C BR 0600X0890 LD 00250 02 038', maktg: 'PAPEL ALTA ALVURA ALCALINO' },
-            { matnr: '20000542', maktx: 'AAA2180 S C BR 0890X1170 LD 03000 01 125', maktg: 'PAPEL ALTA ALVURA ALCALINO' },
-            { matnr: '20041464', maktx: 'AAL8080 B C BR 0270X1150 CO 00076 03 000', maktg: 'PAPEL ALTA ALVURA LASER' },
-            { matnr: '20043112', maktx: 'AAL8075 B C BR 0446X1200 CO 00076 01 000', maktg: 'PAPEL ALTA ALVURA LASER' },
-            { matnr: '20060829', maktx: 'AARA075 B C BR 0840X1200 LD 00076 01 000', maktg: 'PAPEL ALTA ALVURA ROTOGRAVURA' },
-            { matnr: '20060830', maktx: 'AARA075 B C BR 1680X1200 LD 00076 01 000', maktg: 'PAPEL ALTA ALVURA ROTOGRAVURA' },
-            { matnr: '20006376', maktx: 'PBO2070 F C NT 0660X0960 CO 00500 00 050', maktg: 'PAPEL POLEN BOLD' },
-            { matnr: '20006390', maktx: 'PBO2090 F C NT 0660X0960 DESATIVADO', maktg: 'PAPEL POLEN BOLD' },
-            { matnr: '20006446', maktx: 'PES2090 F C NT 0890X1170 CO 00250 01 046', maktg: 'PAPEL RECICLATO SUZANO' },
-            { matnr: '20006447', maktx: 'PES2090 F C NT 1170X0890 CO 00250 01 046', maktg: 'PAPEL RECICLATO SUZANO' },
-            { matnr: '20036994', maktx: 'PES20100 F C NA 2520X3465 LD 00250 02 07', maktg: 'PAPEL RECICLATO SUZANO' },
-            { matnr: '20036995', maktx: 'PES2120 F C NA 0660X0960 LD 00250 02 072', maktg: 'PAPEL RECICLATO SUZANO' },
-            { matnr: '20026807', maktx: 'PFSM070 F C BR 0000X0000 LD 00000 00 000', maktg: 'PAPEL PAPERFECT OFFSET' },
-            { matnr: '20067453', maktx: 'POFM090 S C BR 0584X0889 TR 08000 01 500', maktg: 'PAPEL PAPERFECT OPAQUE' },
-            { matnr: '20067525', maktx: 'POFM090 S C BR 0635X0965 TR 08000 01 500', maktg: 'PAPEL PAPERFECT OPAQUE' },
-            { matnr: '20050226', maktx: 'PPB1090 F C CR 0660X0960 CO 00250 02 072', maktg: 'PAPEL POLEN BOLD NOVO' },
-            { matnr: '20050425', maktx: 'PPB1090 F C CR 0660X0960 LD 00250 02 072', maktg: 'PAPEL POLEN BOLD NOVO' },
-            { matnr: '20048928', maktx: 'PPS1080 F C CR 0660X0960 CO 00500 02 048', maktg: 'PAPEL POLEN SOFT' },
-            { matnr: '20049515', maktx: 'PPS1070 F C CR 0660X0960 CO 00500 02 048', maktg: 'PAPEL POLEN SOFT' },
-            { matnr: '20050154', maktx: 'PPS1080 B C CR 1140X1000 LD 00076 01 000', maktg: 'PAPEL POLEN SOFT' },
-            { matnr: '20026136', maktx: 'PRFM075 B C BR 0440X1000 CO 00076 02 000', maktg: 'PAPEL PAPERFECT LASER' },
-            { matnr: '20026171', maktx: 'PRFM090 S C BR 0900X0640 CO 11000 01 500', maktg: 'PAPEL PAPERFECT LASER' },
-            { matnr: '20026306', maktx: 'PSFM070 B C BR 0850X1000 LD 00076 01 000', maktg: 'PAPEL PAPERFECT OFFSET' },
-            { matnr: '20026323', maktx: 'PSFM056 B C BR 0330X1000 CO 00076 03 000', maktg: 'PAPEL PAPERFECT OFFSET' },
-            { matnr: '21038908', maktx: 'PSFM075 B C BR 1025X1200 SS 00076 01 000', maktg: 'PAPEL PAPERFECT OFFSET OPAQUE' },
-            { matnr: '21038931', maktx: 'PSFM063 B C BR 0255X1100 SS 00076 04 000', maktg: 'PAPEL PAPERFECT OFFSET' },
-            { matnr: '20006562', maktx: 'PSO1080 F C NT 0660X0960 ZD 00250 02 096', maktg: 'PAPEL POLEN SOFT' },
-            { matnr: '20041465', maktx: 'PSO1080 F C NT 0660X0960 LD 00500 02 048', maktg: 'PAPEL POLEN SOFT' },
-            { matnr: '20049963', maktx: 'RBC2120 F C BR 1170X0890 CO 00150 01 062', maktg: 'PAPEL RECICLATO BRANCO' },
-            { matnr: '20050814', maktx: 'RBC1090 F C BR 0640X0880 CO 00500 02 046', maktg: 'PAPEL RECICLATO BRANCO' },
-            { matnr: '20050846', maktx: 'RBC1075 F C BR 0760X1120 CO 00250 01 046', maktg: 'PAPEL RECICLATO BRANCO' },
-            { matnr: '70004136', maktx: 'CBTB115 F C BR 0640X0880 LD 00250 02 084', maktg: 'PAPEL COUCHE SUZANO IMAGE GLOSS' },
-            { matnr: '70004137', maktx: 'CBTB115 F C BR 0660X0960 LD 00250 02 076', maktg: 'PAPEL COUCHE SUZANO IMAGE GLOSS' },
-            { matnr: '20060817', maktx: 'CFTB115 F C BR 0890X1170 LD 00250 01 046', maktg: 'PAPEL COUCHE SUZANO IMAGE MATTE' },
-            { matnr: '21036373', maktx: 'CFTB170 S C BR 0660X0960 TR 08000 01 250', maktg: 'PAPEL COUCHE SUZANO IMAGE MATTE' },
-            { matnr: '20012096', maktx: 'CS25170 F C BR 0720X1020 LD 00125 01 050', maktg: 'PAPEL COUCHE SUZANO REFLEX L2' },
-            { matnr: '70000230', maktx: 'CSBB090 F C BR 0660X0960 ZD 00250 01 060', maktg: 'PAPEL COUCHE SUZANO GLOSS' },
-            { matnr: '70000888', maktx: 'CSBB170 F C BR 0480X0660 ZD 00250 02 074', maktg: 'PAPEL COUCHE SUZANO GLOSS' },
-            { matnr: '70001125', maktx: 'CSFB090 F C BR 0480X0660 CO 00500 02 060', maktg: 'PAPEL COUCHE SUZANO MATTE' },
-            { matnr: '70001128', maktx: 'CSFB150 F C BR 0480X0660 CO 00250 02 072', maktg: 'PAPEL COUCHE SUZANO MATTE' },
-            { matnr: '51001420', maktx: 'CSG5115 F C BR 0760X1120 ZD 00200 01 030', maktg: 'COUCHE SUZANO GLOSS' },
-            { matnr: '20005528', maktx: 'CSM5115 F C BR 0660X0960 LD 00250 02 070', maktg: 'PAPEL COUCHE SUZANO MATTE L2' },
-            { matnr: '20005540', maktx: 'CSM5150 F C BR 0660X0960 LD 00125 02 120', maktg: 'PAPEL COUCHE SUZANO MATTE L2' },
-            { matnr: '20031365', maktx: 'CSS5130 F C BR 0890X1170 LD 00250 01 030', maktg: 'PAPEL COUCHE SUZANO SILK L2' },
-            { matnr: '21036051', maktx: 'KGCA070 F C BR 0760X1120 TR 00500 01 045', maktg: 'PAPEL COUCHE SUZANO FIT GLOSS' },
-            { matnr: '21036097', maktx: 'KSCA080 B C BR 1260X1200 TR 00076 01 000', maktg: 'PAPEL COUCHE SUZANO FIT SILK' },
-            { matnr: '21036106', maktx: 'KSCA070 F C BR 0660X0960 TR 00500 02 062', maktg: 'PAPEL COUCHE SUZANO FIT SILK' },
-            { matnr: '20000322', maktx: 'MT25150 F C BR 0890X1170 CO 00125 01 060', maktg: 'PAPEL COUCHE REFLEX MATTE L2' },
-            { matnr: '20006296', maktx: 'MT25115 F C BR 0890X1170 CO 00200 01 045', maktg: 'PAPEL COUCHE REFLEX MATTE L2' },
-            { matnr: '21036539', maktx: 'NCBB115 F C BR 1120X0760 TR 00250 01 056', maktg: 'NEO COUCHE BRILHO 115gsm 1120X760mm 250' },
-            { matnr: '21036540', maktx: 'NCBB150 F C BR 0760X1120 TR 00150 01 072', maktg: 'NEO COUCHE BRILHO 150gsm 760X1120mm 150' },
-            { matnr: '21036542', maktx: 'NCBB170 F C BR 1170X0890 TR 00150 01 052', maktg: 'NEO COUCHE BRILHO 170gsm 1170X890mm 150' },
-            { matnr: '21036555', maktx: 'NCFB170 F C BR 0880X0640 TR 00250 02 058', maktg: 'NEO COUCHE FOSCO 170gsm 880X640mm 250 fo' },
-            { matnr: '20046953', maktx: 'PCG5095 F C BR 0760X1120 CO 00250 01 046', maktg: 'PAPEL COUCHE SUZANO PRINT GLOSS' },
-            { matnr: '20054291', maktx: 'PCG5115 F C BR 0960X0660 CO 00250 02 076', maktg: 'PAPEL COUCHE SUZANO PRINT GLOSS' },
-            { matnr: '20046973', maktx: 'PCM5170 F C BR 0660X0960 CO 00250 02 052', maktg: 'PAPEL COUCHE SUZANO PRINT MATTE' },
-            { matnr: '20047049', maktx: 'PCM5095 F C BR 0760X1120 CO 00250 01 046', maktg: 'PAPEL COUCHE SUZANO PRINT MATTE' },
-            { matnr: '20062268', maktx: 'PNFB090 F C BR 0660X0960 CO 00500 02 048', maktg: 'PAPEL COUCHE SUZANO DESING MATTE' },
-            { matnr: '20062269', maktx: 'PNFB090 F C BR 0960X0660 CO 00500 02 048', maktg: 'PAPEL COUCHE SUZANO DESING MATTE' },
-            { matnr: '20006761', maktx: 'RF25150 B C BR 0960X0960 CO 00075 01 000', maktg: 'PAPEL COUCHE REFLEX L2' },
-            { matnr: '20061542', maktx: 'CFGA070 B C BR 0640X1200 CO 00076 01 000', maktg: 'PAPEL COUCHE SUZANO FIT GLOSS' },
-            { matnr: '20061543', maktx: 'CFGA070 B C BR 1020X1000 CO 00076 01 000', maktg: 'PAPEL COUCHE SUZANO FIT GLOSS' },
-            { matnr: '20061570', maktx: 'CFGA090 F C BR 0880X0640 NL 00500 02 054', maktg: 'PAPEL NEO COUCHE BRILHO' },
-            { matnr: '20061519', maktx: 'CFSA070 B C BR 0700X1200 CO 00076 01 000', maktg: 'PAPEL COUCHE SUZANO FIT SILK' },
-            { matnr: '20061528', maktx: 'CFSA090 B C BR 0720X1200 LD 00076 01 000', maktg: 'PAPEL COUCHE SUZANO FIT SILK' },
-            { matnr: '20005576', maktx: 'DUO6250 F C BR 0770X1130 CO 00125 01 036', maktg: 'CARTÃO SUPREMO DUO DESIGN' },
-            { matnr: '20005577', maktx: 'DUO6250 F C BR 0960X0660 ZD 00175 02 052', maktg: 'CARTÃO SUPREMO DUO DESIGN' },
-            { matnr: '20069718', maktx: 'DUO6300 S C BR 0590X0880 LD 03700 01 025', maktg: 'CARTÃO SUPREMO DUO DESIGN IMUNE' },
-            { matnr: '21038305', maktx: 'DUO6300 B C BR 0740X1500 EX 00300 01 000', maktg: 'CARTÃO SUPREMO DUO DESIGN' },
-            { matnr: '20008841', maktx: 'SBA6250 S C BR 0960X0660 CO 03500 01 025', maktg: 'CARTÃO SUPREMO ALTA ALVURA' },
-            { matnr: '20008856', maktx: 'SBA6300 S C BR 0660X0960 CO 03000 01 025', maktg: 'CARTÃO SUPREMO ALTA ALVURA' },
-            { matnr: '20069212', maktx: 'TFP6350 B C BR 1240X1500 CO 00300 01 000', maktg: 'CARTÃO TP WHITE PHARMA PLUS' },
-            { matnr: '20069215', maktx: 'TFP6350 B C BR 1560X1500 CO 00300 01 000', maktg: 'CARTÃO TP WHITE PHARMA PLUS' },
-            { matnr: '20069438', maktx: 'TFP6240 B C BR 0720X1500 CO 00300 01 000', maktg: 'TP WHITE PHARMA PLUS' },
-            { matnr: '20069441', maktx: 'TFP6285 B C BR 0720X1500 CO 00300 01 000', maktg: 'TP WHITE PHARMA PLUS' },
-            { matnr: '20037116', maktx: 'TPR6350 F C BR 0660X0960 ZD 00100 02 042', maktg: 'CARTÃO TP PREMIUM' },
-            { matnr: '20037118', maktx: 'TPR6350 F C BR 0770X1130 CO 00075 01 026', maktg: 'CARTÃO TP PREMIUM' },
-            { matnr: '20045768', maktx: 'TPW6225 S C BR 0960X0660 CO 03350 01 025', maktg: 'CARTAO TP WHITE' },
-            { matnr: '20045769', maktx: 'TPW6225 F C BR 0660X0960 CO 00150 02 044', maktg: 'CARTAO TP WHITE' },
-            { matnr: '20055730', maktx: 'TWF6275 S C BR 0560X0695 CO 02825 01 025', maktg: 'TP WHITE PHARMA' },
-            { matnr: '20055734', maktx: 'TWF6290 B C BR 0770X1500 CO 00300 01 000', maktg: 'CARTAO TP WHITE PHARMA' },
-            { matnr: '21038842', maktx: 'TWP6262 B C BR 0900X1500 EX 00300 01 000', maktg: 'CARTÃO TP WHITE PLUS' },
-            { matnr: '21038934', maktx: 'TWP6275 B C BR 0710X1500 EX 00300 01 000', maktg: 'CARTÃO TP WHITE PLUS' },
-            { matnr: '20053014', maktx: 'W1BE305 S C BR 0980X1290 CO 02200 01 100', maktg: 'CRT TP WHITE P1 TR/FS S/CORONA' },
-            { matnr: '20053840', maktx: 'W1BE305 S C BR 0635X0875 CO 02200 01 100', maktg: 'CRT TP WHITE P1 TR/FS S/CORONA' }
+            { matnr: '90000158', maktx: '901770 (Emb. contém 1un. ) ', maktg: 'Nitrogênio', qnt: "90", centro: "1052" },
+            { matnr: '90000164', maktx: '914190 (Emb. contém 1un. ) ', maktg: 'Ar sintético ', qnt: "12", centro: "1101" },
+            { matnr: '90000633', maktx: '900108 (Emb. contém 1un. ) ', maktg: 'Co2', qnt: "85", centro: "1004" },
+            { matnr: '90002074', maktx: '900083 (Emb. contém 1un. ) ', maktg: 'Oxigênio medicinal', qnt: "15", centro: "1004" },
+            { matnr: '90002093', maktx: '900107 (Emb. contém 1un. ) ', maktg: 'Oxigênio industrial', qnt: "45", centro: "1004" },
+            { matnr: '90000158', maktx: '901770 (Emb. contém 1un. ) ', maktg: 'Hélio', qnt: "90", centro: "1052" },
+            { matnr: '90000164', maktx: '914190 (Emb. contém 1un. ) ', maktg: 'Mistura para mig', qnt: "12", centro: "1101" },
+            { matnr: '90000633', maktx: '900108 (Emb. contém 1un. ) ', maktg: 'Hidrogênio', qnt: "85", centro: "1004" },
+            { matnr: '90002074', maktx: '900083 (Emb. contém 1un. ) ', maktg: 'Gases especiais', qnt: "15", centro: "1004" },
+            { matnr: '90002093', maktx: '900107 (Emb. contém 1un. ) ', maktg: 'Acetileno', qnt: "45", centro: "1004" }
         ];
     }
     MateriaisComponent.prototype.ngOnInit = function () {
@@ -1170,7 +1072,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var FaturamentoComponent = /** @class */ (function () {
     function FaturamentoComponent() {
         this.data = {
-            labels: ['Bovino', 'Ovinos'],
+            labels: ['Nitrogênio', 'Ar sintético'],
             datasets: [
                 {
                     data: [100, 10],
@@ -1262,7 +1164,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var RecomendacaoComponent = /** @class */ (function () {
     function RecomendacaoComponent() {
         this.data = {
-            labels: ['Bovinos', 'Ovinos', 'Pescados'],
+            labels: ['Nitrogênio', 'Ar sintético', 'Hidrogênio'],
             datasets: [
                 {
                     data: [0, 0, 0, 0, 0],
@@ -1497,7 +1399,7 @@ var Client = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-wrapper\" >\n  <div class=\"container-fluid\">\n    <div class=\"sidebar panel\">\n      \n      <span class=\"title\">\n        <i class=\"fa fa-check-square\" aria-hidden=\"true\"></i> PESQUISA\n      </span>\n      \n      <comp-pesquisa></comp-pesquisa>\n    </div>\n    <div class=\"main-content\">\n      <div class=\"row row-30\">\n        <div class=\"col-8 panel shadow\">\n          <span class=\"title\">\n            <i class=\"fa fa-check-square\" aria-hidden=\"true\"></i> OFERTAS ATIVAS\n          </span>\n          <div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">\n            <div class=\"carousel-inner\">\n              <div class=\"carousel-item active\">\n                <img class=\"d-block w-100\" src=\"./assets/banner1.jpg\" alt=\"First slide\">\n              </div>\n              <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" src=\"./assets/banner2.jpg\" alt=\"First slide\">\n              </div>\n              <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" src=\"./assets/banner3.jpg\" alt=\"First slide\">\n              </div>\n            </div>\n            <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">\n              <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n              <span class=\"sr-only\">Previous</span>\n            </a>\n            <a class=\"carousel-control-next\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"next\">\n              <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n              <span class=\"sr-only\">Next</span>\n            </a>\n          </div>\n        </div>\n        \n        <div class=\"col-4 panel shadow \">\n          <span class=\"title\">\n            <i class=\"fa fa-bullhorn\" aria-hidden=\"true\"></i> RECOMENDAÇÃO\n          </span>\n          \n          <grafico-recomendacao [dados]=\"clients.selected.graficoRecomendacao\"></grafico-recomendacao>\n          \n          \n        </div>\n        \n        \n      </div>\n      <div class=\"row row-35\">\n        <div class=\"col panel shadow\">\n          <span class=\"title\">\n            <i class=\"fa fa-th-large\" aria-hidden=\"true\"></i> DEMAND SHAPING\n          </span>\n\n          <comp-materiais></comp-materiais>\n        </div>\n      </div>\n      <div class=\"row row-30\">\n        <div class=\"col-8 panel shadow\">\n          \n          <span class=\"title\">\n            <i class=\"fa fa-ticket\" aria-hidden=\"true\"></i> ENCERRAMENTO TICKET\n          </span>\n          \n          <span class=\"row header-encerramento\">\n            <span class=\"col\">\n              <span class=\"title\">\n                Protocolo:\n              </span>\n              <span class=\"protocolo\">\n                  {{protocolo}}\n              </span>\n            </span>\n            <span class=\"col\">\n              <span class=\"title\">\n                Motivo Contato\n              </span>\n              <select class=\"form-control form-control-sm\" >\n                  <option>Dúvida</option>\n                  <option>Informação</option>\n                  <option>Reclamação</option>\n                </select>\n            </span>\n            <span class=\"col\">\n              <span class=\"title\">\n                Prioridade\n              </span>\n              <select class=\"form-control form-control-sm\" >\n                  <option>1</option>\n                  <option>2</option>\n                  <option>3</option>\n                </select>\n            </span>\n          </span>\n\n          <span class=\"row\">\n            <textarea class=\"text-encerramento\" name=\"\" id=\"\" cols=\"30\" rows=\"10\" placeholder=\"Digite seu texto aqui\"></textarea>\n          </span>\n          <span class=\"row btn-ecerramento-group\">\n              <button type=\"button\" class=\"btn btn-primary btn-sm btn-ecerramento\">Visita</button>\n              <button type=\"button\" class=\"btn btn-info btn-sm btn-ecerramento\">Retorno</button>\n              <button type=\"button\" class=\"btn btn-warning btn-sm btn-ecerramento\">Limpar</button>\n              <button type=\"button\" class=\"btn btn-success btn-sm btn-ecerramento-gravar\">Gravar</button>\n          </span>\n\n        </div>\n        <div class=\"col-4 panel shadow\">\n          <span class=\"title\">\n            <i class=\"fa fa-file-text-o\" aria-hidden=\"true\"></i> SCRIPT\n          </span>\n          <textarea class=\"text-script\" name=\"\" id=\"\" cols=\"30\" rows=\"10\">Sr(a), anote o número do protocolo. Friboi esta a sua disposição. Mas alguma informação?Nós agradecemos pelo contato tenha um bom dia/boa tarde/boa noite!\n          </textarea>\n          \n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"page-wrapper\" >\n  <div class=\"container-fluid\">\n    <div class=\"sidebar panel\">\n      \n      <span class=\"title\">\n        <i class=\"fa fa-check-square\" aria-hidden=\"true\"></i> PESQUISA\n      </span>\n      \n      <comp-pesquisa></comp-pesquisa>\n    </div>\n    <div class=\"main-content\">\n      <div class=\"row row-30\">\n        <div class=\"col-8 panel shadow\">\n          <span class=\"title\">\n            <i class=\"fa fa-check-square\" aria-hidden=\"true\"></i> OFERTAS ATIVAS\n          </span>\n          <div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">\n            <div class=\"carousel-inner\">\n              <div class=\"carousel-item active\">\n                <img class=\"d-block w-100\" src=\"./assets/banner1.jpg\" alt=\"First slide\">\n              </div>\n              <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" src=\"./assets/banner2.jpg\" alt=\"First slide\">\n              </div>\n              <div class=\"carousel-item\">\n                <img class=\"d-block w-100\" src=\"./assets/banner3.jpg\" alt=\"First slide\">\n              </div>\n            </div>\n            <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">\n              <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n              <span class=\"sr-only\">Previous</span>\n            </a>\n            <a class=\"carousel-control-next\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"next\">\n              <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n              <span class=\"sr-only\">Next</span>\n            </a>\n          </div>\n        </div>\n        \n        <div class=\"col-4 panel shadow \">\n          <span class=\"title\">\n            <i class=\"fa fa-bullhorn\" aria-hidden=\"true\"></i> RECOMENDAÇÃO\n          </span>\n          \n          <grafico-recomendacao [dados]=\"clients.selected.graficoRecomendacao\"></grafico-recomendacao>\n          \n          \n        </div>\n        \n        \n      </div>\n      <div class=\"row row-35\">\n        <div class=\"col panel shadow\">\n          <span class=\"title\">\n            <i class=\"fa fa-th-large\" aria-hidden=\"true\"></i> DEMAND SHAPING\n          </span>\n\n          <comp-materiais></comp-materiais>\n        </div>\n      </div>\n      <div class=\"row row-30\">\n        <div class=\"col-8 panel shadow\">\n          \n          <span class=\"title\">\n            <i class=\"fa fa-ticket\" aria-hidden=\"true\"></i> ENCERRAMENTO TICKET\n          </span>\n          \n          <span class=\"row header-encerramento\">\n            <span class=\"col\">\n              <span class=\"title\">\n                Protocolo:\n              </span>\n              <span class=\"protocolo\">\n                  {{protocolo}}\n              </span>\n            </span>\n            <span class=\"col\">\n              <span class=\"title\">\n                Motivo Contato\n              </span>\n              <select class=\"form-control form-control-sm\" >\n                  <option>Dúvida</option>\n                  <option>Informação</option>\n                  <option>Reclamação</option>\n                </select>\n            </span>\n            <span class=\"col\">\n              <span class=\"title\">\n                Prioridade\n              </span>\n              <select class=\"form-control form-control-sm\" >\n                  <option>1</option>\n                  <option>2</option>\n                  <option>3</option>\n                </select>\n            </span>\n          </span>\n\n          <span class=\"row\">\n            <textarea class=\"text-encerramento\" name=\"\" id=\"\" cols=\"30\" rows=\"10\" placeholder=\"Digite seu texto aqui\"></textarea>\n          </span>\n          <span class=\"row btn-ecerramento-group\">\n              <button type=\"button\" class=\"btn btn-primary btn-sm btn-ecerramento\">Visita</button>\n              <button type=\"button\" class=\"btn btn-info btn-sm btn-ecerramento\">Retorno</button>\n              <button type=\"button\" class=\"btn btn-warning btn-sm btn-ecerramento\">Limpar</button>\n              <button type=\"button\" class=\"btn btn-success btn-sm btn-ecerramento-gravar\">Gravar</button>\n          </span>\n\n        </div>\n        <div class=\"col-4 panel shadow\">\n          <span class=\"title\">\n            <i class=\"fa fa-file-text-o\" aria-hidden=\"true\"></i> SCRIPT\n          </span>\n          <textarea class=\"text-script\" name=\"\" id=\"\" cols=\"30\" rows=\"10\">Sr(a), anote o número do protocolo. Estamos à sua disposição. Mais alguma informação?Nós agradecemos pelo contato tenha um bom dia/boa tarde/boa noite!\n          </textarea>\n          \n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
